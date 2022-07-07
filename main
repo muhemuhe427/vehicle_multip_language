@@ -1,0 +1,21 @@
+import pandas as pd
+import numpy as np
+
+# matpltolib, seaborn
+# matpltolib是比较底层
+# seaborn是基于matpltolib
+
+# https://matplotlib.org/stable/tutorials/index.html
+# https://seaborn.pydata.org/examples/index.html
+import seaborn as sns
+
+%pylab inline
+
+# 这两行代码解决 plt 中文显示的问题
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
+
+from IPython.display import set_matplotlib_formats
+set_matplotlib_formats('svg') # 展示的图片格式
+
+from sklearn.model_selection import KFold
